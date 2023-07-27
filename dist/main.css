@@ -1,8 +1,10 @@
 * {
-    background-image: radial-gradient(purple, rgb(94, 150, 94), rgb(28, 28, 85));
-}
+    background-color:rgb(100, 134, 100);
 
 #add {
     height: 100px;
     width:200px;
+    border-radius: 10px;
+    border:2px solid white;
+    box-shadow: 5px 4px 5px 4px rgb(45, 45, 75);
 }
