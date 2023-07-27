@@ -1,9 +1,9 @@
 * {
     background-color:rgb(100, 134, 100);
 
-#todo {
-    display: flex;
-    align-items: center;
+.add-stuff {
+    display: grid;
+    grid-template-rows: 2fr;
 }
 
 #add {
