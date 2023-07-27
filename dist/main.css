@@ -1,3 +1,8 @@
 * {
-    background-image: radial-gradient( rgb(94, 150, 94), rgb(28, 28, 85));
+    background-image: radial-gradient(purple, rgb(94, 150, 94), rgb(28, 28, 85));
+}
+
+#add {
+    height: 100px;
+    width:200px;
 }
