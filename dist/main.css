@@ -1,10 +1,25 @@
 * {
     background-color:rgb(100, 134, 100);
 
+#add-stuff {
+    display: flex;
+}
+
 #add {
     height: 100px;
     width:200px;
     border-radius: 10px;
     border:2px solid white;
     box-shadow: 5px 4px 5px 4px rgb(45, 45, 75);
+}
+
+#task {
+    padding:20px;
+    background-color: azure;
+    height: 30px;
+    width: 300px;
+    border-radius: 15px;
+    border:5px solid rgb(29, 58, 29);
+    margin:20px;
+    text-align: center;
 }
