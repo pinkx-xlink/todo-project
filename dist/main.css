@@ -23,3 +23,12 @@
     margin:20px;
     text-align: center;
 } 
+
+.task-complete {
+
+}
+
+.task-complete:checked + .task-description {
+    background-color: rgb(173, 173, 159);
+    border: 4px solid gray;   
+}
