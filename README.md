@@ -5,3 +5,4 @@ Notes:
 there will be a default projects folder, as well as more specific folder. For ex: a. Gym/Health b. Education c. Projects d. Home e. Work-related f. Personal .....figure out how to add an option to create custom folders.....
 - add login feature to safely store data across devices
 - add feature to filter projects based on type (gym, personal, social, chores, etc)
+-- Add a function that provides example place-holder to-dos (ex: take out trash, fold laundry, baptise the cats...)
