@@ -6,3 +6,7 @@ there will be a default projects folder, as well as more specific folder. For ex
 - add login feature to safely store data across devices
 - add feature to filter projects based on type (gym, personal, social, chores, etc)
 -- Add a function that provides example place-holder to-dos (ex: take out trash, fold laundry, baptise the cats...)
+--Add calendar/calendar view of upcoming events
+--Add function to show the # of tasks per subfolder
+--Add ctrl F function to search through all tasks
+--Add archive for completed projects (show task date)
