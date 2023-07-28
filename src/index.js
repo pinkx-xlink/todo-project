@@ -11,7 +11,7 @@ function component() {
 
 document.body.appendChild(component());
 
-function addTask() {
-    let taskElement = document.querySelector("task");
-    taskElement.innerHTML = ""
-}
+// function addTask() {
+//     let taskElement = document.querySelector("task");
+//     taskElement.innerHTML = ""
+// }
