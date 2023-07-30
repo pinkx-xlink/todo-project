@@ -2,27 +2,27 @@ const ITEMS_CONTAINER = document.getElementById("tasks");
 const ITEM_TEMPLATE = document.getElementById("taskTemplate");
 const ADD_BUTTON = document.getElementById("add");
 
-let Tasks = getTasks();
+let Items = getItems();
 
-function getTasks() {
-  const value = localStorage.getTask("todo-test") || "[]";
+function getItems() {
+  const value = localStorage.getItem("todo-test") || "[]";
   
   return JSON.parse(value);
 }
 
-function setTasks(tasks) {
-    const tasksJSON.stringify(tasks);
+function setItems(items) {
+    const tasksJSON.stringify(items);
 
-    localStorage.setTask("todo-test", tasksJson);
+    localStorage.setItem("todo-test", tasksJson);
 }
 
-function addTask() {
+function addItem() {
     tasks.unshift({
         description: "",
         completed: false
     });
 
-    setTasks(tasks);
+    setItems(items);
     refreshList();
 }
 
@@ -31,20 +31,20 @@ function refreshList() {
 
     ITEMS_CONTAINER.innerHTML = "";
 
-    for (const task of tasks) {
-        const taskElement = task_template.contentEditable.cloneNode(true);
-        const descriptionInput = innerElement.querySelector(".task-description");
-        const completeInput = innerElement.querySelector(".task-complete");
+    for (const item of items) {
+        const itemElement = ITEM_TEMPLATE.contentEditable.cloneNode(true);
+        const descriptionInput = innerElement.querySelector(".item-description");
+        const completeInput = innerElement.querySelector(".item-complete");
 
-    descriptionInput.value = task.description;
-    completeInput.checked = task.complete;
+    descriptionInput.value = item.description;
+    completeInput.checked = item.complete;
 
-    ITEMS_CONTAINER.append(taskElement);
+    ITEMS_CONTAINER.append(itemElement);
     }
 }
 
 ADD_BUTTON.addEventListener("click", () => {
-    addTask();
+    addItem();
 });
 
 refreshList();
