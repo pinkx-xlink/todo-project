@@ -35,7 +35,13 @@ function addTask() {
 
         for (const task of tasks) {
             const taskElement = task_template.contentEditable.cloneNode(true);
-            
+            const descriptionInput = innerElement.querySelector(".task-description");
+            const completeInput = innerElement.querySelector(".task-complete");
+       
+        descriptionInput.value = task.description;
+        completeInput.checked = task.complete;
+
+        tasks_container.append(taskElement);
         }
         
     }
