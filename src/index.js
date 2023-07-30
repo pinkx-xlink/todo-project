@@ -27,17 +27,17 @@ function addItem() {
 }
 
 function refreshList() {
-    //todo sort items
+    //todo sort itemsc
 
     ITEMS_CONTAINER.innerHTML = "";
 
     for (const item of items) {
         const itemElement = ITEM_TEMPLATE.content.cloneNode(true);
         const descriptionInput = itemElement.querySelector(".item-description");
-        const completeInput = itemElement.querySelector(".item-completed");
+        const completedInput = itemElement.querySelector(".item-completed");
 
     descriptionInput.value = item.description;
-    completeInput.checked = item.complete;
+    completedInput.checked = item.completed;
 
     ITEMS_CONTAINER.append(itemElement);
     }
