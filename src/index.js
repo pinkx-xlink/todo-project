@@ -26,6 +26,13 @@ function addItem() {
     refreshList();
 }
 
+function updateItem(item, key, value) {
+    item[key] = value;
+    
+    setItems(items);
+    refreshList();
+}
+
 function refreshList() {
     //todo sort itemsc
 
