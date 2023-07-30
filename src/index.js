@@ -11,7 +11,7 @@ function getItems() {
 }
 
 function setItems(items) {
-    const itemsJSON.stringify(items);
+    const itemsJSON = JSON.stringify(items);
 
     localStorage.setItem("todo-test", itemsJson);
 }
