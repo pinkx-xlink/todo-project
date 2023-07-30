@@ -1,5 +1,5 @@
-const ITEMS_CONTAINER = document.getElementById("tasks");
-const ITEM_TEMPLATE = document.getElementById("taskTemplate");
+const ITEMS_CONTAINER = document.getElementById("items");
+const ITEM_TEMPLATE = document.getElementById("itemTemplate");
 const ADD_BUTTON = document.getElementById("add");
 
 let Items = getItems();
@@ -11,13 +11,13 @@ function getItems() {
 }
 
 function setItems(items) {
-    const tasksJSON.stringify(items);
+    const itemsJSON.stringify(items);
 
-    localStorage.setItem("todo-test", tasksJson);
+    localStorage.setItem("todo-test", itemsJson);
 }
 
 function addItem() {
-    tasks.unshift({
+    items.unshift({
         description: "",
         completed: false
     });
