@@ -33,8 +33,8 @@ function refreshList() {
 
     for (const item of items) {
         const itemElement = ITEM_TEMPLATE.content.cloneNode(true);
-        const descriptionInput = innerElement.querySelector(".item-description");
-        const completeInput = innerElement.querySelector(".item-complete");
+        const descriptionInput = itemElement.querySelector(".item-description");
+        const completeInput = itemElement.querySelector(".item-completed");
 
     descriptionInput.value = item.description;
     completeInput.checked = item.complete;
