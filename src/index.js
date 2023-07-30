@@ -32,7 +32,7 @@ function refreshList() {
     ITEMS_CONTAINER.innerHTML = "";
 
     for (const item of items) {
-        const itemElement = ITEM_TEMPLATE.contentEditable.cloneNode(true);
+        const itemElement = ITEM_TEMPLATE.content.cloneNode(true);
         const descriptionInput = innerElement.querySelector(".item-description");
         const completeInput = innerElement.querySelector(".item-complete");
 
