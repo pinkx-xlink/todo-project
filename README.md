@@ -10,3 +10,6 @@ there will be a default projects folder, as well as more specific folder. For ex
 --Add function to show the # of tasks per subfolder
 --Add ctrl F function to search through all tasks
 --Add archive for completed projects (show task date)
+
+
+Tutorial by => https://www.youtube.com/watch?v=cijPd-TXPn4&t=447s
