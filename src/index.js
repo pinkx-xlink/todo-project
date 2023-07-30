@@ -28,26 +28,29 @@ function addTask() {
     refreshList();
 }
 
-    function refreshList() {
-        //todo sort items
+function refreshList() {
+    //todo sort items
 
-        tasks_container.innerHTML = "";
+    tasks_container.innerHTML = "";
 
-        for (const task of tasks) {
-            const taskElement = task_template.contentEditable.cloneNode(true);
-            const descriptionInput = innerElement.querySelector(".task-description");
-            const completeInput = innerElement.querySelector(".task-complete");
-       
-        descriptionInput.value = task.description;
-        completeInput.checked = task.complete;
+    for (const task of tasks) {
+        const taskElement = task_template.contentEditable.cloneNode(true);
+        const descriptionInput = innerElement.querySelector(".task-description");
+        const completeInput = innerElement.querySelector(".task-complete");
 
-        tasks_container.append(taskElement);
-        }
-        
+    descriptionInput.value = task.description;
+    completeInput.checked = task.complete;
+
+    tasks_container.append(taskElement);
     }
+    
+}
 
+add_button.addEventListener("click", () => {
+    addTask();
+});
 
-console.log(tasks);
+refreshList();
 
 // function addTask() {
 //     let taskElement = document.querySelector("task");
