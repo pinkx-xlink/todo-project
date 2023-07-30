@@ -23,7 +23,23 @@ function addTask() {
         description: "",
         completed: false
     });
+
+    setTasks(tasks);
+    refreshList();
 }
+
+    function refreshList() {
+        //todo sort items
+
+        tasks_container.innerHTML = "";
+
+        for (const task of tasks) {
+            const taskElement = task_template.contentEditable.cloneNode(true);
+            
+        }
+        
+    }
+
 
 console.log(tasks);
 
