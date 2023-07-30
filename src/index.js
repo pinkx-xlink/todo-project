@@ -1,6 +1,6 @@
 const tasks_container = document.getElementById("tasks");
 const task_template = document.getElementById("taskTemplate");
-const add_button = document.getElementById("add");
+const ADD_BUTTON = document.getElementById("add");
 
 let Tasks = getTasks();
 
@@ -14,8 +14,6 @@ function setTasks(tasks) {
     const tasksJSON.stringify(tasks);
 
     localStorage.setTask("todo-test", tasksJson);
-
-
 }
 
 function addTask() {
@@ -43,10 +41,9 @@ function refreshList() {
 
     tasks_container.append(taskElement);
     }
-    
 }
 
-add_button.addEventListener("click", () => {
+ADD_BUTTON.addEventListener("click", () => {
     addTask();
 });
 
