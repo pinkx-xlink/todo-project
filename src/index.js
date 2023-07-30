@@ -1,5 +1,5 @@
-const tasks_container = document.getElementById("tasks");
-const task_template = document.getElementById("taskTemplate");
+const ITEMS_CONTAINER = document.getElementById("tasks");
+const ITEM_TEMPLATE = document.getElementById("taskTemplate");
 const ADD_BUTTON = document.getElementById("add");
 
 let Tasks = getTasks();
@@ -29,7 +29,7 @@ function addTask() {
 function refreshList() {
     //todo sort items
 
-    tasks_container.innerHTML = "";
+    ITEMS_CONTAINER.innerHTML = "";
 
     for (const task of tasks) {
         const taskElement = task_template.contentEditable.cloneNode(true);
@@ -39,7 +39,7 @@ function refreshList() {
     descriptionInput.value = task.description;
     completeInput.checked = task.complete;
 
-    tasks_container.append(taskElement);
+    ITEMS_CONTAINER.append(taskElement);
     }
 }
 
